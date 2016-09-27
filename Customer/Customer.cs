@@ -27,20 +27,18 @@ namespace MoonDollars
             // kick things off
             IWantCoffee needCoffeeMessage = new IWantCoffee();
             
-   /*         Context.System.Scheduler.ScheduleTellRepeatedly(TimeSpan.FromSeconds(10),
-             TimeSpan.FromSeconds(2),
+             Context.System.Scheduler.ScheduleTellRepeatedly(TimeSpan.FromSeconds(10),
+             TimeSpan.FromSeconds(12),
              TheBarista, 
              needCoffeeMessage, 
-             Self);*/
+             Self);
 
             #region all messages at once
-         /*    for (int z = 0; z < 3000; z++)
+            /*for (int z = 0; z < 3000; z++)
              {
                  baristaRef.Tell(needCoffeeMessage);
              }*/
             #endregion
-
-
         }
 
         public void OrderDeclinedHandler(PaymentWasDeclined msg)
